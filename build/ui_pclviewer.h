@@ -27,6 +27,7 @@
 #include <QtGui/QSlider>
 #include <QtGui/QSpacerItem>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTextBrowser>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -52,6 +53,12 @@ public:
     QWidget *dockWidgetContents;
     QHBoxLayout *horizontalLayout_3;
     QFrame *frame;
+    QVBoxLayout *verticalLayout_3;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_2;
+    QLCDNumber *PointsNumber;
+    QSpacerItem *verticalSpacer_9;
+    QTextBrowser *textBrowser;
     QDockWidget *OperateDockWidget;
     QWidget *dockWidgetContents_2;
     QHBoxLayout *horizontalLayout_4;
@@ -61,6 +68,10 @@ public:
     QLCDNumber *lcdNumber;
     QSpacerItem *verticalSpacer_5;
     QSlider *KtreeSlider;
+    QSpacerItem *verticalSpacer_7;
+    QPushButton *MLSButton;
+    QSpacerItem *verticalSpacer_8;
+    QPushButton *DownSampingButton;
     QSpacerItem *verticalSpacer_4;
     QPushButton *ReconstructButton;
     QSpacerItem *verticalSpacer_2;
@@ -127,6 +138,35 @@ public:
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
+        verticalLayout_3 = new QVBoxLayout(frame);
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        verticalLayout_2->addWidget(label_2);
+
+        PointsNumber = new QLCDNumber(frame);
+        PointsNumber->setObjectName(QString::fromUtf8("PointsNumber"));
+
+        verticalLayout_2->addWidget(PointsNumber);
+
+        verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_9);
+
+        textBrowser = new QTextBrowser(frame);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+
+        verticalLayout_2->addWidget(textBrowser);
+
+
+        verticalLayout_3->addLayout(verticalLayout_2);
+
 
         horizontalLayout_3->addWidget(frame);
 
@@ -167,6 +207,24 @@ public:
         KtreeSlider->setOrientation(Qt::Horizontal);
 
         verticalLayout->addWidget(KtreeSlider);
+
+        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_7);
+
+        MLSButton = new QPushButton(frame_2);
+        MLSButton->setObjectName(QString::fromUtf8("MLSButton"));
+
+        verticalLayout->addWidget(MLSButton);
+
+        verticalSpacer_8 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_8);
+
+        DownSampingButton = new QPushButton(frame_2);
+        DownSampingButton->setObjectName(QString::fromUtf8("DownSampingButton"));
+
+        verticalLayout->addWidget(DownSampingButton);
 
         verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -233,7 +291,10 @@ public:
         OpenAction->setText(QApplication::translate("PCLViewer", "\346\211\223\345\274\200(&N)", 0, QApplication::UnicodeUTF8));
         subwindow->setWindowTitle(QApplication::translate("PCLViewer", "\345\255\220\347\252\227\345\217\243", 0, QApplication::UnicodeUTF8));
         menu_F->setTitle(QApplication::translate("PCLViewer", "\346\226\207\344\273\266(&F)", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("PCLViewer", "The Number of Points", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("PCLViewer", "                \347\202\271\344\272\221\347\262\276\347\256\200", 0, QApplication::UnicodeUTF8));
+        MLSButton->setText(QApplication::translate("PCLViewer", "\347\202\271\344\272\221\345\271\263\346\273\221", 0, QApplication::UnicodeUTF8));
+        DownSampingButton->setText(QApplication::translate("PCLViewer", "\351\231\215\351\207\207\346\240\267", 0, QApplication::UnicodeUTF8));
         ReconstructButton->setText(QApplication::translate("PCLViewer", "\347\202\271\344\272\221\351\207\215\346\236\204", 0, QApplication::UnicodeUTF8));
         BuildButton->setText(QApplication::translate("PCLViewer", "\346\233\262\351\235\242\351\207\215\345\273\272", 0, QApplication::UnicodeUTF8));
         FilterButton->setText(QApplication::translate("PCLViewer", "\346\233\262\351\235\242\345\205\211\346\273\221", 0, QApplication::UnicodeUTF8));

@@ -9,11 +9,12 @@ include_directories (${PCL_INCLUDE_DIRS})
 link_directories    (${PCL_LIBRARY_DIRS})
 add_definitions     (${PCL_DEFINITIONS})
 
-set  (project_SOURCES main.cpp pclviewer.cpp kdtree.cpp greedy_triangulation.cpp smoothSurface.h smoothSurface.cpp)
-set  (project_HEADERS pclviewer.h kdtree.h greedy_triangulation.h)
+set  (project_SOURCES main.cpp pclviewer.cpp kdtree.cpp greedy_triangulation.cpp smoothSurface.h smoothSurface.cpp pretreatment.cpp)
+set  (project_HEADERS pclviewer.h kdtree.h greedy_triangulation.h pretreatment.h)
 set  (project_FORMS   pclviewer.ui)
 set  (VTK_LIBRARIES   vtkRendering vtkGraphics vtkHybrid QVTK)
-
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 QT4_WRAP_CPP (project_HEADERS_MOC   ${project_HEADERS})
 QT4_WRAP_UI  (project_FORMS_HEADERS ${project_FORMS})
 

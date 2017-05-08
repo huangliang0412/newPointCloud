@@ -72,9 +72,15 @@ moc_greedy_triangulation.cxx: moc_greedy_triangulation.cxx_parameters
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_greedy_triangulation.cxx"
 	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx_parameters
 
+moc_pretreatment.cxx: ../pretreatment.h
+moc_pretreatment.cxx: moc_pretreatment.cxx_parameters
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_pretreatment.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_pretreatment.cxx_parameters
+
 CMakeFiles/pcl_visualizer.dir/main.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/main.cpp.o -c /home/huangliang/PointCloud/main.cpp
 
@@ -97,7 +103,7 @@ CMakeFiles/pcl_visualizer.dir/main.cpp.o.provides.build: CMakeFiles/pcl_visualiz
 
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o: ../pclviewer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o -c /home/huangliang/PointCloud/pclviewer.cpp
 
@@ -120,7 +126,7 @@ CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o.provides.build: CMakeFiles/pcl_vis
 
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o: ../kdtree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o -c /home/huangliang/PointCloud/kdtree.cpp
 
@@ -143,7 +149,7 @@ CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o.provides.build: CMakeFiles/pcl_visual
 
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o: ../greedy_triangulation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o -c /home/huangliang/PointCloud/greedy_triangulation.cpp
 
@@ -166,7 +172,7 @@ CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o: ../smoothSurface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o -c /home/huangliang/PointCloud/smoothSurface.cpp
 
@@ -187,9 +193,32 @@ CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.provides: CMakeFiles/pcl_visua
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.provides.build: CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o
 
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o: ../pretreatment.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o -c /home/huangliang/PointCloud/pretreatment.cpp
+
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/pretreatment.cpp > CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i
+
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/pretreatment.cpp -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s
+
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires
+
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides
+
+CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides.build: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o
+
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o: moc_pclviewer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o -c /home/huangliang/PointCloud/build/moc_pclviewer.cxx
 
@@ -212,7 +241,7 @@ CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.provides.build: CMakeFiles/pcl
 
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o: moc_kdtree.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o -c /home/huangliang/PointCloud/build/moc_kdtree.cxx
 
@@ -235,7 +264,7 @@ CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.provides.build: CMakeFiles/pcl_vi
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o: moc_greedy_triangulation.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o -c /home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx
 
@@ -256,6 +285,29 @@ CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.provides: CMakeFile
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o
 
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o: moc_pretreatment.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o -c /home/huangliang/PointCloud/build/moc_pretreatment.cxx
+
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/build/moc_pretreatment.cxx > CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i
+
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/build/moc_pretreatment.cxx -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s
+
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires
+
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides
+
+CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o
+
 # Object files for target pcl_visualizer
 pcl_visualizer_OBJECTS = \
 "CMakeFiles/pcl_visualizer.dir/main.cpp.o" \
@@ -263,9 +315,11 @@ pcl_visualizer_OBJECTS = \
 "CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o" \
 "CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o" \
 "CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o" \
+"CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o" \
 "CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o" \
 "CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o" \
-"CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
+"CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o" \
+"CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
 
 # External object files for target pcl_visualizer
 pcl_visualizer_EXTERNAL_OBJECTS =
@@ -275,9 +329,11 @@ pcl_visualizer: CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/build.make
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libQtGui.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libQtCore.so
@@ -323,6 +379,10 @@ pcl_visualizer: /usr/lib/x86_64-linux-gnu/libqhull.so
 pcl_visualizer: /usr/lib/libOpenNI.so
 pcl_visualizer: /usr/lib/libOpenNI2.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+pcl_visualizer: /usr/lib/libvtkGenericFiltering.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkGeovis.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkCharts.so.5.8.0
+pcl_visualizer: /usr/lib/libQVTK.so.5.8.0
 pcl_visualizer: /usr/lib/libpcl_common.so
 pcl_visualizer: /usr/lib/libpcl_kdtree.so
 pcl_visualizer: /usr/lib/libpcl_octree.so
@@ -341,6 +401,20 @@ pcl_visualizer: /usr/lib/libpcl_people.so
 pcl_visualizer: /usr/lib/libpcl_outofcore.so
 pcl_visualizer: /usr/lib/libpcl_tracking.so
 pcl_visualizer: /usr/lib/libpcl_apps.so
+pcl_visualizer: /usr/lib/libvtkViews.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkInfovis.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkWidgets.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkVolumeRendering.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkHybrid.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkParallel.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkRendering.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkImaging.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkGraphics.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkIO.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkFiltering.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkCommon.so.5.8.0
+pcl_visualizer: /usr/lib/libvtksys.so.5.8.0
+pcl_visualizer: /usr/lib/libvtkQtChart.so.5.8.0
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable pcl_visualizer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pcl_visualizer.dir/link.txt --verbose=$(VERBOSE)
@@ -354,9 +428,11 @@ CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/pclviewer.
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires
 .PHONY : CMakeFiles/pcl_visualizer.dir/requires
 
 CMakeFiles/pcl_visualizer.dir/clean:
@@ -367,6 +443,7 @@ CMakeFiles/pcl_visualizer.dir/depend: ui_pclviewer.h
 CMakeFiles/pcl_visualizer.dir/depend: moc_pclviewer.cxx
 CMakeFiles/pcl_visualizer.dir/depend: moc_kdtree.cxx
 CMakeFiles/pcl_visualizer.dir/depend: moc_greedy_triangulation.cxx
+CMakeFiles/pcl_visualizer.dir/depend: moc_pretreatment.cxx
 	cd /home/huangliang/PointCloud/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/huangliang/PointCloud /home/huangliang/PointCloud /home/huangliang/PointCloud/build /home/huangliang/PointCloud/build /home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcl_visualizer.dir/depend
 

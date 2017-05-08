@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
   "/home/huangliang/PointCloud/build/moc_kdtree.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o"
   "/home/huangliang/PointCloud/build/moc_pclviewer.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o"
+  "/home/huangliang/PointCloud/build/moc_pretreatment.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
   "/home/huangliang/PointCloud/pclviewer.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o"
+  "/home/huangliang/PointCloud/pretreatment.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o"
   "/home/huangliang/PointCloud/smoothSurface.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

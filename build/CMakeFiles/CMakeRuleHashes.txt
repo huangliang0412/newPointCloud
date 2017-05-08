@@ -2,4 +2,5 @@
 67584236fda3b1e6603ace135d34a973 moc_greedy_triangulation.cxx
 87e6d6c93c90c8275a928f2ba279d254 moc_kdtree.cxx
 ebcaa73c5c7a53502d3ff0fbe70ac5ee moc_pclviewer.cxx
+62793c9b34b73284b3bb032f2863d227 moc_pretreatment.cxx
 3dcdf8e0bfd9f3c5565c90ba4bcb79e1 ui_pclviewer.h

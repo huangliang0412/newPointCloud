@@ -22,7 +22,7 @@ static const uint qt_meta_data_PCLViewer[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -37,6 +37,8 @@ static const uint qt_meta_data_PCLViewer[] = {
       96,   10,   10,   10, 0x0a,
      111,   10,   10,   10, 0x0a,
      128,   10,   10,   10, 0x0a,
+     148,   10,   10,   10, 0x0a,
+     158,   10,   10,   10, 0x0a,
 
        0        // eod
 };
@@ -46,6 +48,7 @@ static const char qt_meta_stringdata_PCLViewer[] = {
     "ReconstructPolygonmesh()\0ResetPointcloud()\0"
     "CurvesurfaceReform()\0openFileSlot()\0"
     "clearCloudSlot()\0filterSurfaceSlot()\0"
+    "mlsSlot()\0downSamplingSlot()\0"
 };
 
 void PCLViewer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -61,6 +64,8 @@ void PCLViewer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 4: _t->openFileSlot(); break;
         case 5: _t->clearCloudSlot(); break;
         case 6: _t->filterSurfaceSlot(); break;
+        case 7: _t->mlsSlot(); break;
+        case 8: _t->downSamplingSlot(); break;
         default: ;
         }
     }
@@ -99,10 +104,132 @@ int PCLViewer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 9;
     }
+    return _id;
+}
+static const uint qt_meta_data_MlsDialog[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_MlsDialog[] = {
+    "MlsDialog\0"
+};
+
+void MlsDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData MlsDialog::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject MlsDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_MlsDialog,
+      qt_meta_data_MlsDialog, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &MlsDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *MlsDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *MlsDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_MlsDialog))
+        return static_cast<void*>(const_cast< MlsDialog*>(this));
+    return QDialog::qt_metacast(_clname);
+}
+
+int MlsDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
+}
+static const uint qt_meta_data_DownSampingDialog[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_DownSampingDialog[] = {
+    "DownSampingDialog\0"
+};
+
+void DownSampingDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData DownSampingDialog::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject DownSampingDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_DownSampingDialog,
+      qt_meta_data_DownSampingDialog, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &DownSampingDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *DownSampingDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *DownSampingDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_DownSampingDialog))
+        return static_cast<void*>(const_cast< DownSampingDialog*>(this));
+    return QDialog::qt_metacast(_clname);
+}
+
+int DownSampingDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
     return _id;
 }
 QT_END_MOC_NAMESPACE

@@ -16,6 +16,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/vtk-5.8/VTKConfig.cmake"
   "/usr/lib/vtk-5.8/VTKConfigQt.cmake"
   "/usr/lib/vtk-5.8/VTKConfigVersion.cmake"
+  "/usr/lib/vtk-5.8/VTKTargets-release.cmake"
+  "/usr/lib/vtk-5.8/VTKTargets.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake"
@@ -60,6 +62,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "moc_pclviewer.cxx_parameters"
   "moc_kdtree.cxx_parameters"
   "moc_greedy_triangulation.cxx_parameters"
+  "moc_pretreatment.cxx_parameters"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

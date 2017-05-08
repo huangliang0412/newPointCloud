@@ -258,6 +258,30 @@ moc_pclviewer.cxx.s:
 	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.s
 .PHONY : moc_pclviewer.cxx.s
 
+moc_pretreatment.o: moc_pretreatment.cxx.o
+.PHONY : moc_pretreatment.o
+
+# target to build an object file
+moc_pretreatment.cxx.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o
+.PHONY : moc_pretreatment.cxx.o
+
+moc_pretreatment.i: moc_pretreatment.cxx.i
+.PHONY : moc_pretreatment.i
+
+# target to preprocess a source file
+moc_pretreatment.cxx.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i
+.PHONY : moc_pretreatment.cxx.i
+
+moc_pretreatment.s: moc_pretreatment.cxx.s
+.PHONY : moc_pretreatment.s
+
+# target to generate assembly for a file
+moc_pretreatment.cxx.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s
+.PHONY : moc_pretreatment.cxx.s
+
 pclviewer.o: pclviewer.cpp.o
 .PHONY : pclviewer.o
 
@@ -281,6 +305,30 @@ pclviewer.s: pclviewer.cpp.s
 pclviewer.cpp.s:
 	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.s
 .PHONY : pclviewer.cpp.s
+
+pretreatment.o: pretreatment.cpp.o
+.PHONY : pretreatment.o
+
+# target to build an object file
+pretreatment.cpp.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o
+.PHONY : pretreatment.cpp.o
+
+pretreatment.i: pretreatment.cpp.i
+.PHONY : pretreatment.i
+
+# target to preprocess a source file
+pretreatment.cpp.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i
+.PHONY : pretreatment.cpp.i
+
+pretreatment.s: pretreatment.cpp.s
+.PHONY : pretreatment.s
+
+# target to generate assembly for a file
+pretreatment.cpp.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s
+.PHONY : pretreatment.cpp.s
 
 smoothSurface.o: smoothSurface.cpp.o
 .PHONY : smoothSurface.o
@@ -333,9 +381,15 @@ help:
 	@echo "... moc_pclviewer.o"
 	@echo "... moc_pclviewer.i"
 	@echo "... moc_pclviewer.s"
+	@echo "... moc_pretreatment.o"
+	@echo "... moc_pretreatment.i"
+	@echo "... moc_pretreatment.s"
 	@echo "... pclviewer.o"
 	@echo "... pclviewer.i"
 	@echo "... pclviewer.s"
+	@echo "... pretreatment.o"
+	@echo "... pretreatment.i"
+	@echo "... pretreatment.s"
 	@echo "... smoothSurface.o"
 	@echo "... smoothSurface.i"
 	@echo "... smoothSurface.s"
