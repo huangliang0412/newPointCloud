@@ -12,7 +12,7 @@ void PreTreatment::mls(PointCloud<PointXYZ>::Ptr& cloud, float mls_search_radius
     PointCloud<PointXYZ> mls_points;
     MovingLeastSquares<PointXYZ, PointXYZ> mls;
     mls.setInputCloud(cloud);
-    mls.setPolynomialFit(true);
+    //mls.setPolynomialFit(true);
     mls.setSearchMethod(tree);
     //mls.setSearchRadius(5);
     mls.setSearchRadius(mls_search_radius);

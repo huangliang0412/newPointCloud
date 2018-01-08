@@ -117,7 +117,7 @@ PolygonMesh rebuild(pcl::PointCloud<pcl::PointXYZ>::Ptr &cloud, double maxp2plen
     ne = calculate_normal(cloud);
     PolygonMesh::Ptr mesh(new PolygonMesh);
     *mesh = reconstruct_mesh(ne, maxp2plength, searchradius);
-    std::cout<<"nihao"<<std::endl;
+    std::cout<<"construct"<<std::endl;
 
 
     return *mesh;

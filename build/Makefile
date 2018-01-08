@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/huangliang/PointCloud
+CMAKE_SOURCE_DIR = /home/huangliang/PointCloudThread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/huangliang/PointCloud/build
+CMAKE_BINARY_DIR = /home/huangliang/PointCloudThread/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huangliang/PointCloud/build/CMakeFiles /home/huangliang/PointCloud/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huangliang/PointCloudThread/build/CMakeFiles /home/huangliang/PointCloudThread/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huangliang/PointCloud/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huangliang/PointCloudThread/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,6 +113,30 @@ pcl_visualizer: cmake_check_build_system
 pcl_visualizer/fast:
 	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/build
 .PHONY : pcl_visualizer/fast
+
+calthread.o: calthread.cpp.o
+.PHONY : calthread.o
+
+# target to build an object file
+calthread.cpp.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/calthread.cpp.o
+.PHONY : calthread.cpp.o
+
+calthread.i: calthread.cpp.i
+.PHONY : calthread.i
+
+# target to preprocess a source file
+calthread.cpp.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/calthread.cpp.i
+.PHONY : calthread.cpp.i
+
+calthread.s: calthread.cpp.s
+.PHONY : calthread.s
+
+# target to generate assembly for a file
+calthread.cpp.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/calthread.cpp.s
+.PHONY : calthread.cpp.s
 
 greedy_triangulation.o: greedy_triangulation.cpp.o
 .PHONY : greedy_triangulation.o
@@ -185,6 +209,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+moc_calthread.o: moc_calthread.cxx.o
+.PHONY : moc_calthread.o
+
+# target to build an object file
+moc_calthread.cxx.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o
+.PHONY : moc_calthread.cxx.o
+
+moc_calthread.i: moc_calthread.cxx.i
+.PHONY : moc_calthread.i
+
+# target to preprocess a source file
+moc_calthread.cxx.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.i
+.PHONY : moc_calthread.cxx.i
+
+moc_calthread.s: moc_calthread.cxx.s
+.PHONY : moc_calthread.s
+
+# target to generate assembly for a file
+moc_calthread.cxx.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.s
+.PHONY : moc_calthread.cxx.s
+
+moc_changeformat.o: moc_changeformat.cxx.o
+.PHONY : moc_changeformat.o
+
+# target to build an object file
+moc_changeformat.cxx.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o
+.PHONY : moc_changeformat.cxx.o
+
+moc_changeformat.i: moc_changeformat.cxx.i
+.PHONY : moc_changeformat.i
+
+# target to preprocess a source file
+moc_changeformat.cxx.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.i
+.PHONY : moc_changeformat.cxx.i
+
+moc_changeformat.s: moc_changeformat.cxx.s
+.PHONY : moc_changeformat.s
+
+# target to generate assembly for a file
+moc_changeformat.cxx.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.s
+.PHONY : moc_changeformat.cxx.s
 
 moc_greedy_triangulation.o: moc_greedy_triangulation.cxx.o
 .PHONY : moc_greedy_triangulation.o
@@ -330,6 +402,30 @@ pretreatment.cpp.s:
 	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s
 .PHONY : pretreatment.cpp.s
 
+qrc_icon.o: qrc_icon.cxx.o
+.PHONY : qrc_icon.o
+
+# target to build an object file
+qrc_icon.cxx.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o
+.PHONY : qrc_icon.cxx.o
+
+qrc_icon.i: qrc_icon.cxx.i
+.PHONY : qrc_icon.i
+
+# target to preprocess a source file
+qrc_icon.cxx.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.i
+.PHONY : qrc_icon.cxx.i
+
+qrc_icon.s: qrc_icon.cxx.s
+.PHONY : qrc_icon.s
+
+# target to generate assembly for a file
+qrc_icon.cxx.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.s
+.PHONY : qrc_icon.cxx.s
+
 smoothSurface.o: smoothSurface.cpp.o
 .PHONY : smoothSurface.o
 
@@ -363,6 +459,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pcl_visualizer"
+	@echo "... calthread.o"
+	@echo "... calthread.i"
+	@echo "... calthread.s"
 	@echo "... greedy_triangulation.o"
 	@echo "... greedy_triangulation.i"
 	@echo "... greedy_triangulation.s"
@@ -372,6 +471,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... moc_calthread.o"
+	@echo "... moc_calthread.i"
+	@echo "... moc_calthread.s"
+	@echo "... moc_changeformat.o"
+	@echo "... moc_changeformat.i"
+	@echo "... moc_changeformat.s"
 	@echo "... moc_greedy_triangulation.o"
 	@echo "... moc_greedy_triangulation.i"
 	@echo "... moc_greedy_triangulation.s"
@@ -390,6 +495,9 @@ help:
 	@echo "... pretreatment.o"
 	@echo "... pretreatment.i"
 	@echo "... pretreatment.s"
+	@echo "... qrc_icon.o"
+	@echo "... qrc_icon.i"
+	@echo "... qrc_icon.s"
 	@echo "... smoothSurface.o"
 	@echo "... smoothSurface.i"
 	@echo "... smoothSurface.s"

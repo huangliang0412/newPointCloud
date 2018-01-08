@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/huangliang/PointCloud
+CMAKE_SOURCE_DIR = /home/huangliang/PointCloudThread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/huangliang/PointCloud/build
+CMAKE_BINARY_DIR = /home/huangliang/PointCloudThread/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pcl_visualizer.dir/depend.make
@@ -49,48 +49,96 @@ include CMakeFiles/pcl_visualizer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pcl_visualizer.dir/flags.make
 
+qrc_icon.cxx: ../image/wire.png
+qrc_icon.cxx: ../image/view_raster.png
+qrc_icon.cxx: ../image/textures.png
+qrc_icon.cxx: ../image/splitV.png
+qrc_icon.cxx: ../image/splitH.png
+qrc_icon.cxx: ../image/snapshot.png
+qrc_icon.cxx: ../image/smooth.png
+qrc_icon.cxx: ../image/selected.png
+qrc_icon.cxx: ../image/selected_vert.png
+qrc_icon.cxx: ../image/selected_face.png
+qrc_icon.cxx: ../image/search.png
+qrc_icon.cxx: ../image/save.png
+qrc_icon.cxx: ../image/reload.png
+qrc_icon.cxx: ../image/points.png
+qrc_icon.cxx: ../image/options.png
+qrc_icon.cxx: ../image/open.png
+qrc_icon.cxx: ../image/open_project.png
+qrc_icon.cxx: ../image/normal.png
+qrc_icon.cxx: ../image/lighton.png
+qrc_icon.cxx: ../image/lightoff.png
+qrc_icon.cxx: ../image/layers.png
+qrc_icon.cxx: ../image/info.png
+qrc_icon.cxx: ../image/import_mesh.png
+qrc_icon.cxx: ../image/flatlines.png
+qrc_icon.cxx: ../image/flat.png
+qrc_icon.cxx: ../image/eraser.png
+qrc_icon.cxx: ../image/show_axis.png
+qrc_icon.cxx: ../image/fill.png
+qrc_icon.cxx: ../image/vert_color.png
+qrc_icon.cxx: ../image/bbox.png
+qrc_icon.cxx: icon.qrc.depends
+qrc_icon.cxx: ../icon.qrc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_icon.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/rcc -name icon -o /home/huangliang/PointCloudThread/build/qrc_icon.cxx /home/huangliang/PointCloudThread/icon.qrc
+
 ui_pclviewer.h: ../pclviewer.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pclviewer.h"
-	/usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/huangliang/PointCloud/build/ui_pclviewer.h /home/huangliang/PointCloud/pclviewer.ui
+	/usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/huangliang/PointCloudThread/build/ui_pclviewer.h /home/huangliang/PointCloudThread/pclviewer.ui
 
 moc_pclviewer.cxx: ../pclviewer.h
 moc_pclviewer.cxx: moc_pclviewer.cxx_parameters
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_pclviewer.cxx"
-	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_pclviewer.cxx_parameters
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_pclviewer.cxx_parameters
 
 moc_kdtree.cxx: ../kdtree.h
 moc_kdtree.cxx: moc_kdtree.cxx_parameters
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_kdtree.cxx"
-	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_kdtree.cxx_parameters
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_kdtree.cxx_parameters
 
 moc_greedy_triangulation.cxx: ../greedy_triangulation.h
 moc_greedy_triangulation.cxx: moc_greedy_triangulation.cxx_parameters
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_greedy_triangulation.cxx"
-	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx_parameters
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_greedy_triangulation.cxx_parameters
 
 moc_pretreatment.cxx: ../pretreatment.h
 moc_pretreatment.cxx: moc_pretreatment.cxx_parameters
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_pretreatment.cxx"
-	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloud/build/moc_pretreatment.cxx_parameters
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_pretreatment.cxx_parameters
+
+moc_changeformat.cxx: ../changeformat.h
+moc_changeformat.cxx: moc_changeformat.cxx_parameters
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_changeformat.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_changeformat.cxx_parameters
+
+moc_calthread.cxx: ../calthread.h
+moc_calthread.cxx: moc_calthread.cxx_parameters
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_calthread.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/huangliang/PointCloudThread/build/moc_calthread.cxx_parameters
 
 CMakeFiles/pcl_visualizer.dir/main.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/main.cpp.o -c /home/huangliang/PointCloud/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/main.cpp.o -c /home/huangliang/PointCloudThread/main.cpp
 
 CMakeFiles/pcl_visualizer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/main.cpp > CMakeFiles/pcl_visualizer.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/main.cpp > CMakeFiles/pcl_visualizer.dir/main.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/main.cpp -o CMakeFiles/pcl_visualizer.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/main.cpp -o CMakeFiles/pcl_visualizer.dir/main.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/main.cpp.o.requires
@@ -103,17 +151,17 @@ CMakeFiles/pcl_visualizer.dir/main.cpp.o.provides.build: CMakeFiles/pcl_visualiz
 
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o: ../pclviewer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o -c /home/huangliang/PointCloud/pclviewer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o -c /home/huangliang/PointCloudThread/pclviewer.cpp
 
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/pclviewer.cpp > CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/pclviewer.cpp > CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/pclviewer.cpp -o CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/pclviewer.cpp -o CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o.requires
@@ -126,17 +174,17 @@ CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o.provides.build: CMakeFiles/pcl_vis
 
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o: ../kdtree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o -c /home/huangliang/PointCloud/kdtree.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o -c /home/huangliang/PointCloudThread/kdtree.cpp
 
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/kdtree.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/kdtree.cpp > CMakeFiles/pcl_visualizer.dir/kdtree.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/kdtree.cpp > CMakeFiles/pcl_visualizer.dir/kdtree.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/kdtree.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/kdtree.cpp -o CMakeFiles/pcl_visualizer.dir/kdtree.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/kdtree.cpp -o CMakeFiles/pcl_visualizer.dir/kdtree.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o.requires
@@ -149,17 +197,17 @@ CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o.provides.build: CMakeFiles/pcl_visual
 
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o: ../greedy_triangulation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o -c /home/huangliang/PointCloud/greedy_triangulation.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o -c /home/huangliang/PointCloudThread/greedy_triangulation.cpp
 
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/greedy_triangulation.cpp > CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/greedy_triangulation.cpp > CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/greedy_triangulation.cpp -o CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/greedy_triangulation.cpp -o CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.requires
@@ -172,17 +220,17 @@ CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o: ../smoothSurface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o -c /home/huangliang/PointCloud/smoothSurface.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o -c /home/huangliang/PointCloudThread/smoothSurface.cpp
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/smoothSurface.cpp > CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/smoothSurface.cpp > CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/smoothSurface.cpp -o CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/smoothSurface.cpp -o CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.requires
@@ -195,17 +243,17 @@ CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.provides.build: CMakeFiles/pcl
 
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o: ../pretreatment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o -c /home/huangliang/PointCloud/pretreatment.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o -c /home/huangliang/PointCloudThread/pretreatment.cpp
 
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/pretreatment.cpp > CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/pretreatment.cpp > CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.i
 
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/pretreatment.cpp -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/pretreatment.cpp -o CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.s
 
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires
@@ -216,19 +264,65 @@ CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides: CMakeFiles/pcl_visual
 
 CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.provides.build: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o
 
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.o: ../calthread.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/calthread.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/calthread.cpp.o -c /home/huangliang/PointCloudThread/calthread.cpp
+
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/calthread.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/calthread.cpp > CMakeFiles/pcl_visualizer.dir/calthread.cpp.i
+
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/calthread.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/calthread.cpp -o CMakeFiles/pcl_visualizer.dir/calthread.cpp.s
+
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.requires
+
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.provides: CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.provides
+
+CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.provides.build: CMakeFiles/pcl_visualizer.dir/calthread.cpp.o
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o: qrc_icon.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o -c /home/huangliang/PointCloudThread/build/qrc_icon.cxx
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/qrc_icon.cxx > CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.i
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/qrc_icon.cxx -o CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.s
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.requires
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.provides: CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.provides
+
+CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o
+
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o: moc_pclviewer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o -c /home/huangliang/PointCloud/build/moc_pclviewer.cxx
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o -c /home/huangliang/PointCloudThread/build/moc_pclviewer.cxx
 
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/build/moc_pclviewer.cxx > CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_pclviewer.cxx > CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.i
 
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/build/moc_pclviewer.cxx -o CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_pclviewer.cxx -o CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.s
 
 CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.requires
@@ -241,17 +335,17 @@ CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.provides.build: CMakeFiles/pcl
 
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o: moc_kdtree.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o -c /home/huangliang/PointCloud/build/moc_kdtree.cxx
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o -c /home/huangliang/PointCloudThread/build/moc_kdtree.cxx
 
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/build/moc_kdtree.cxx > CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_kdtree.cxx > CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.i
 
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/build/moc_kdtree.cxx -o CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_kdtree.cxx -o CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.s
 
 CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.requires
@@ -264,17 +358,17 @@ CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.provides.build: CMakeFiles/pcl_vi
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o: moc_greedy_triangulation.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o -c /home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o -c /home/huangliang/PointCloudThread/build/moc_greedy_triangulation.cxx
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx > CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_greedy_triangulation.cxx > CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.i
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx -o CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_greedy_triangulation.cxx -o CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.s
 
 CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.requires
@@ -287,17 +381,17 @@ CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.provides.build: CMa
 
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o: moc_pretreatment.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloud/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o -c /home/huangliang/PointCloud/build/moc_pretreatment.cxx
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o -c /home/huangliang/PointCloudThread/build/moc_pretreatment.cxx
 
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloud/build/moc_pretreatment.cxx > CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_pretreatment.cxx > CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.i
 
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloud/build/moc_pretreatment.cxx -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_pretreatment.cxx -o CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.s
 
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires:
 .PHONY : CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires
@@ -308,6 +402,52 @@ CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides: CMakeFiles/pcl_vi
 
 CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o
 
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o: moc_changeformat.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o -c /home/huangliang/PointCloudThread/build/moc_changeformat.cxx
+
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_changeformat.cxx > CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.i
+
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_changeformat.cxx -o CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.s
+
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.requires
+
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.provides: CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.provides
+
+CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o: CMakeFiles/pcl_visualizer.dir/flags.make
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o: moc_calthread.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PointCloudThread/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o -c /home/huangliang/PointCloudThread/build/moc_calthread.cxx
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PointCloudThread/build/moc_calthread.cxx > CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.i
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PointCloudThread/build/moc_calthread.cxx -o CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.s
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.requires:
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.requires
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.provides: CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.requires
+	$(MAKE) -f CMakeFiles/pcl_visualizer.dir/build.make CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.provides.build
+.PHONY : CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.provides
+
+CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.provides.build: CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o
+
 # Object files for target pcl_visualizer
 pcl_visualizer_OBJECTS = \
 "CMakeFiles/pcl_visualizer.dir/main.cpp.o" \
@@ -316,10 +456,14 @@ pcl_visualizer_OBJECTS = \
 "CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o" \
 "CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o" \
 "CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o" \
+"CMakeFiles/pcl_visualizer.dir/calthread.cpp.o" \
+"CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o" \
 "CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o" \
 "CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o" \
 "CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o" \
-"CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
+"CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o" \
+"CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o" \
+"CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o"
 
 # External object files for target pcl_visualizer
 pcl_visualizer_EXTERNAL_OBJECTS =
@@ -330,10 +474,14 @@ pcl_visualizer: CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/calthread.cpp.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o
+pcl_visualizer: CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o
 pcl_visualizer: CMakeFiles/pcl_visualizer.dir/build.make
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libQtGui.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libQtCore.so
@@ -345,28 +493,29 @@ pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libpthread.so
-pcl_visualizer: /usr/lib/libpcl_common.so
-pcl_visualizer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
-pcl_visualizer: /usr/lib/libpcl_kdtree.so
-pcl_visualizer: /usr/lib/libpcl_octree.so
-pcl_visualizer: /usr/lib/libpcl_search.so
-pcl_visualizer: /usr/lib/x86_64-linux-gnu/libqhull.so
-pcl_visualizer: /usr/lib/libpcl_surface.so
-pcl_visualizer: /usr/lib/libpcl_sample_consensus.so
+pcl_visualizer: /usr/local/lib/libpcl_common.so
+pcl_visualizer: /usr/local/lib/libflann_cpp.so
+pcl_visualizer: /usr/local/lib/libpcl_kdtree.so
+pcl_visualizer: /usr/local/lib/libpcl_octree.so
+pcl_visualizer: /usr/local/lib/libpcl_search.so
+pcl_visualizer: /usr/local/lib/libpcl_sample_consensus.so
+pcl_visualizer: /usr/local/lib/libpcl_filters.so
+pcl_visualizer: /usr/local/lib/libpcl_features.so
 pcl_visualizer: /usr/lib/libOpenNI.so
 pcl_visualizer: /usr/lib/libOpenNI2.so
-pcl_visualizer: /usr/lib/libpcl_io.so
-pcl_visualizer: /usr/lib/libpcl_filters.so
-pcl_visualizer: /usr/lib/libpcl_features.so
-pcl_visualizer: /usr/lib/libpcl_keypoints.so
-pcl_visualizer: /usr/lib/libpcl_registration.so
-pcl_visualizer: /usr/lib/libpcl_segmentation.so
-pcl_visualizer: /usr/lib/libpcl_recognition.so
-pcl_visualizer: /usr/lib/libpcl_visualization.so
-pcl_visualizer: /usr/lib/libpcl_people.so
-pcl_visualizer: /usr/lib/libpcl_outofcore.so
-pcl_visualizer: /usr/lib/libpcl_tracking.so
-pcl_visualizer: /usr/lib/libpcl_apps.so
+pcl_visualizer: /usr/local/lib/libpcl_io.so
+pcl_visualizer: /usr/local/lib/libpcl_visualization.so
+pcl_visualizer: /usr/local/lib/libpcl_ml.so
+pcl_visualizer: /usr/local/lib/libpcl_segmentation.so
+pcl_visualizer: /usr/local/lib/libpcl_people.so
+pcl_visualizer: /usr/local/lib/libpcl_tracking.so
+pcl_visualizer: /usr/local/lib/libpcl_keypoints.so
+pcl_visualizer: /usr/local/lib/libpcl_outofcore.so
+pcl_visualizer: /usr/local/lib/libpcl_stereo.so
+pcl_visualizer: /usr/lib/x86_64-linux-gnu/libqhull.so
+pcl_visualizer: /usr/local/lib/libpcl_surface.so
+pcl_visualizer: /usr/local/lib/libpcl_registration.so
+pcl_visualizer: /usr/local/lib/libpcl_recognition.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_system.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -378,29 +527,30 @@ pcl_visualizer: /usr/lib/x86_64-linux-gnu/libpthread.so
 pcl_visualizer: /usr/lib/x86_64-linux-gnu/libqhull.so
 pcl_visualizer: /usr/lib/libOpenNI.so
 pcl_visualizer: /usr/lib/libOpenNI2.so
-pcl_visualizer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+pcl_visualizer: /usr/local/lib/libflann_cpp.so
 pcl_visualizer: /usr/lib/libvtkGenericFiltering.so.5.8.0
 pcl_visualizer: /usr/lib/libvtkGeovis.so.5.8.0
 pcl_visualizer: /usr/lib/libvtkCharts.so.5.8.0
 pcl_visualizer: /usr/lib/libQVTK.so.5.8.0
-pcl_visualizer: /usr/lib/libpcl_common.so
-pcl_visualizer: /usr/lib/libpcl_kdtree.so
-pcl_visualizer: /usr/lib/libpcl_octree.so
-pcl_visualizer: /usr/lib/libpcl_search.so
-pcl_visualizer: /usr/lib/libpcl_surface.so
-pcl_visualizer: /usr/lib/libpcl_sample_consensus.so
-pcl_visualizer: /usr/lib/libpcl_io.so
-pcl_visualizer: /usr/lib/libpcl_filters.so
-pcl_visualizer: /usr/lib/libpcl_features.so
-pcl_visualizer: /usr/lib/libpcl_keypoints.so
-pcl_visualizer: /usr/lib/libpcl_registration.so
-pcl_visualizer: /usr/lib/libpcl_segmentation.so
-pcl_visualizer: /usr/lib/libpcl_recognition.so
-pcl_visualizer: /usr/lib/libpcl_visualization.so
-pcl_visualizer: /usr/lib/libpcl_people.so
-pcl_visualizer: /usr/lib/libpcl_outofcore.so
-pcl_visualizer: /usr/lib/libpcl_tracking.so
-pcl_visualizer: /usr/lib/libpcl_apps.so
+pcl_visualizer: /usr/local/lib/libpcl_common.so
+pcl_visualizer: /usr/local/lib/libpcl_kdtree.so
+pcl_visualizer: /usr/local/lib/libpcl_octree.so
+pcl_visualizer: /usr/local/lib/libpcl_search.so
+pcl_visualizer: /usr/local/lib/libpcl_sample_consensus.so
+pcl_visualizer: /usr/local/lib/libpcl_filters.so
+pcl_visualizer: /usr/local/lib/libpcl_features.so
+pcl_visualizer: /usr/local/lib/libpcl_io.so
+pcl_visualizer: /usr/local/lib/libpcl_visualization.so
+pcl_visualizer: /usr/local/lib/libpcl_ml.so
+pcl_visualizer: /usr/local/lib/libpcl_segmentation.so
+pcl_visualizer: /usr/local/lib/libpcl_people.so
+pcl_visualizer: /usr/local/lib/libpcl_tracking.so
+pcl_visualizer: /usr/local/lib/libpcl_keypoints.so
+pcl_visualizer: /usr/local/lib/libpcl_outofcore.so
+pcl_visualizer: /usr/local/lib/libpcl_stereo.so
+pcl_visualizer: /usr/local/lib/libpcl_surface.so
+pcl_visualizer: /usr/local/lib/libpcl_registration.so
+pcl_visualizer: /usr/local/lib/libpcl_recognition.so
 pcl_visualizer: /usr/lib/libvtkViews.so.5.8.0
 pcl_visualizer: /usr/lib/libvtkInfovis.so.5.8.0
 pcl_visualizer: /usr/lib/libvtkWidgets.so.5.8.0
@@ -429,21 +579,28 @@ CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/kdtree.cpp
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/calthread.cpp.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o.requires
 CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o.requires
+CMakeFiles/pcl_visualizer.dir/requires: CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o.requires
 .PHONY : CMakeFiles/pcl_visualizer.dir/requires
 
 CMakeFiles/pcl_visualizer.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/pcl_visualizer.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/pcl_visualizer.dir/clean
 
+CMakeFiles/pcl_visualizer.dir/depend: qrc_icon.cxx
 CMakeFiles/pcl_visualizer.dir/depend: ui_pclviewer.h
 CMakeFiles/pcl_visualizer.dir/depend: moc_pclviewer.cxx
 CMakeFiles/pcl_visualizer.dir/depend: moc_kdtree.cxx
 CMakeFiles/pcl_visualizer.dir/depend: moc_greedy_triangulation.cxx
 CMakeFiles/pcl_visualizer.dir/depend: moc_pretreatment.cxx
-	cd /home/huangliang/PointCloud/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/huangliang/PointCloud /home/huangliang/PointCloud /home/huangliang/PointCloud/build /home/huangliang/PointCloud/build /home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/DependInfo.cmake --color=$(COLOR)
+CMakeFiles/pcl_visualizer.dir/depend: moc_changeformat.cxx
+CMakeFiles/pcl_visualizer.dir/depend: moc_calthread.cxx
+	cd /home/huangliang/PointCloudThread/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/huangliang/PointCloudThread /home/huangliang/PointCloudThread /home/huangliang/PointCloudThread/build /home/huangliang/PointCloudThread/build /home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcl_visualizer.dir/depend
 

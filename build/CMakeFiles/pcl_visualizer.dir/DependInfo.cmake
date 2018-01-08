@@ -4,26 +4,32 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/huangliang/PointCloud/greedy_triangulation.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o"
-  "/home/huangliang/PointCloud/kdtree.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o"
-  "/home/huangliang/PointCloud/main.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/main.cpp.o"
-  "/home/huangliang/PointCloud/build/moc_greedy_triangulation.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
-  "/home/huangliang/PointCloud/build/moc_kdtree.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o"
-  "/home/huangliang/PointCloud/build/moc_pclviewer.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o"
-  "/home/huangliang/PointCloud/build/moc_pretreatment.cxx" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
-  "/home/huangliang/PointCloud/pclviewer.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o"
-  "/home/huangliang/PointCloud/pretreatment.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o"
-  "/home/huangliang/PointCloud/smoothSurface.cpp" "/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o"
+  "/home/huangliang/PointCloudThread/calthread.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/calthread.cpp.o"
+  "/home/huangliang/PointCloudThread/greedy_triangulation.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/greedy_triangulation.cpp.o"
+  "/home/huangliang/PointCloudThread/kdtree.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/kdtree.cpp.o"
+  "/home/huangliang/PointCloudThread/main.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/main.cpp.o"
+  "/home/huangliang/PointCloudThread/build/moc_calthread.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_calthread.cxx.o"
+  "/home/huangliang/PointCloudThread/build/moc_changeformat.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_changeformat.cxx.o"
+  "/home/huangliang/PointCloudThread/build/moc_greedy_triangulation.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_greedy_triangulation.cxx.o"
+  "/home/huangliang/PointCloudThread/build/moc_kdtree.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_kdtree.cxx.o"
+  "/home/huangliang/PointCloudThread/build/moc_pclviewer.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_pclviewer.cxx.o"
+  "/home/huangliang/PointCloudThread/build/moc_pretreatment.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/moc_pretreatment.cxx.o"
+  "/home/huangliang/PointCloudThread/pclviewer.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/pclviewer.cpp.o"
+  "/home/huangliang/PointCloudThread/pretreatment.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/pretreatment.cpp.o"
+  "/home/huangliang/PointCloudThread/build/qrc_icon.cxx" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/qrc_icon.cxx.o"
+  "/home/huangliang/PointCloudThread/smoothSurface.cpp" "/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir/smoothSurface.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS
+  "DISABLE_DAVIDSDK"
+  "DISABLE_DSSDK"
+  "DISABLE_ENSENSO"
+  "DISABLE_LIBUSB_1_0"
   "DISABLE_PCAP"
   "DISABLE_PNG"
-  "EIGEN_USE_NEW_STDVECTOR"
-  "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"
-  "FLANN_STATIC"
+  "DISABLE_RSSDK"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
@@ -37,7 +43,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
-  "/usr/include/pcl-1.7"
+  "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"

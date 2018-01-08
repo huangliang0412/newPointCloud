@@ -1,20 +1,24 @@
-cmake_minimum_required (VERSION 2.6 FATAL_ERROR)
+cmake_minimum_required (VERSION 2.8 FATAL_ERROR)
 
 project      (pcl-visualizer)
 find_package (Qt4 REQUIRED)
 find_package (VTK REQUIRED)
-find_package (PCL 1.7.1 REQUIRED)
+find_package (PCL 1.8 REQUIRED)
 
 include_directories (${PCL_INCLUDE_DIRS})
 link_directories    (${PCL_LIBRARY_DIRS})
 add_definitions     (${PCL_DEFINITIONS})
 
-set  (project_SOURCES main.cpp pclviewer.cpp kdtree.cpp greedy_triangulation.cpp smoothSurface.h smoothSurface.cpp pretreatment.cpp)
-set  (project_HEADERS pclviewer.h kdtree.h greedy_triangulation.h pretreatment.h)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
+set  (project_SOURCES main.cpp pclviewer.cpp kdtree.cpp greedy_triangulation.cpp smoothSurface.h smoothSurface.cpp pretreatment.cpp  calthread.cpp
+   select_cloud.h)
+set  (project_HEADERS pclviewer.h kdtree.h greedy_triangulation.h pretreatment.h changeformat.h calthread.h)
 set  (project_FORMS   pclviewer.ui)
 set  (VTK_LIBRARIES   vtkRendering vtkGraphics vtkHybrid QVTK)
 SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
+
+QT4_ADD_RESOURCES(project_SOURCES icon.qrc)
 QT4_WRAP_CPP (project_HEADERS_MOC   ${project_HEADERS})
 QT4_WRAP_UI  (project_FORMS_HEADERS ${project_FORMS})
 

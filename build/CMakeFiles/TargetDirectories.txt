@@ -1,1 +1,1 @@
-/home/huangliang/PointCloud/build/CMakeFiles/pcl_visualizer.dir
+/home/huangliang/PointCloudThread/build/CMakeFiles/pcl_visualizer.dir
